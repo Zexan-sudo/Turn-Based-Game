@@ -1,0 +1,22 @@
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\bin\Debug\GamesTest.exe.config
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\bin\Debug\GamesTest.exe
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\bin\Debug\GamesTest.pdb
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.csprojAssemblyReference.cache
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.frmBattleForm.resources
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.Properties.Resources.resources
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.csproj.GenerateResource.cache
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.csproj.CoreCompileInputs.cache
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.exe
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.pdb
+E:\HDD Documents\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.frmInventory.resources
+E:\Coding\Coding Homework\GamesTest\GamesTest\bin\Debug\GamesTest.exe.config
+E:\Coding\Coding Homework\GamesTest\GamesTest\bin\Debug\GamesTest.exe
+E:\Coding\Coding Homework\GamesTest\GamesTest\bin\Debug\GamesTest.pdb
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.csprojAssemblyReference.cache
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.frmBattleForm.resources
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.frmInventory.resources
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.Properties.Resources.resources
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.csproj.GenerateResource.cache
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.csproj.CoreCompileInputs.cache
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.exe
+E:\Coding\Coding Homework\GamesTest\GamesTest\obj\Debug\GamesTest.pdb
