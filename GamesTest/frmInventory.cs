@@ -20,17 +20,32 @@ namespace GamesTest
         string[] strItemsList = { "Potion", "Bomb", "Elixir"};
         int[] intItemsQuantity = { 1, 2 , 1};
 
+        /// <summary>
+        /// loads the frmInventory menu so the player can select an item to use
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmInventory_Load(object sender, EventArgs e)
         {
             FillListBox();
         }
 
+        /// <summary>
+        /// Event handler for the cancel button. Will close the frmInventory menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.Tag = "";
             this.Close();
         }
 
+        /// <summary>
+        /// Event handler for when an item is selected. Will use that item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnSelect_Click(object sender, EventArgs e)
         {
             int intSelectedItem = lstItemsList.SelectedIndex;
@@ -46,6 +61,9 @@ namespace GamesTest
             }
         }
 
+        /// <summary>
+        /// Loads the items avaliable into the frmInventory listbox
+        /// </summary>
         private void FillListBox()
         {
             lstItemsList.Items.Clear();
@@ -56,6 +74,11 @@ namespace GamesTest
             }
         }
 
+        /// <summary>
+        /// Shows item descriptions
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnInfo_Click(object sender, EventArgs e)
         {
             int intSelectedItem = lstItemsList.SelectedIndex;

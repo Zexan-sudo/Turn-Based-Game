@@ -30,6 +30,11 @@ namespace GamesTest
         Form frmInventoryForm = new frmInventory();
         EnemyInventory enemyInventory = new EnemyInventory();
 
+        /// <summary>
+        /// loads the form frmBattleForm and initiates the game with default health, mana, and inventory values
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmBattleForm_Load(object sender, EventArgs e)
         {
             lblMessage.Text = "You've run into a CHIKA! \nPick a move and click SELECT before she destroys Za Worldo";
@@ -65,6 +70,11 @@ namespace GamesTest
             }
         }
 
+        /// <summary>
+        /// event handler for the select button. Executes the move selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnSelect_Click(object sender, EventArgs e)
         {
 
@@ -109,6 +119,11 @@ namespace GamesTest
 
         }
 
+        /// <summary>
+        /// executes the enemies move.
+        /// TODO: 
+        /// Very certain this can be reworked to be cleaner
+        /// </summary>
         private void EnemyTurn()
         {
             bool counter = true;
@@ -274,6 +289,10 @@ namespace GamesTest
 
         }
 
+        /// <summary>
+        /// Closes the game
+        /// </summary>
+        /// <param name="name">The name of the player that won</param>
         private void EndGame(string name)
         {
             if (name.ToLower() == "player")
@@ -288,6 +307,12 @@ namespace GamesTest
             }
         }
 
+        /// <summary>
+        /// Checks if the player or CPUs mana is sufficient for the move selected
+        /// </summary>
+        /// <param name="intManaCost">The amount of mana to execute the move selected</param>
+        /// <param name="intMana">The amount of mana avaliable</param>
+        /// <returns></returns>
         private bool ManaCheck(int intManaCost, int intMana)
         {
             bool manaCheck;
@@ -303,6 +328,12 @@ namespace GamesTest
             return manaCheck;
         }
 
+        /// <summary>
+        /// checks if the player or CPUs health is above 0 and deducts the health infliced by the move attacked with
+        /// </summary>
+        /// <param name="intHealthCost">The amount of heath inflicted</param>
+        /// <param name="intHealth">The amount of health avaliable</param>
+        /// <returns></returns>
         private bool HealthCheck(int intHealthCost, int intHealth)
         {
             bool healthCheck;
@@ -318,6 +349,10 @@ namespace GamesTest
             return healthCheck;
         }
 
+        /// <summary>
+        /// Recalculates enemies values based on enemies move
+        /// </summary>
+        /// <param name="intEnemyMove">The move the enemy selected</param>        
         private void EnemyMove(int intEnemyMove)
         {
             lblEnemyMoveMessage.Text = "CHIKA used " + strMovesList[intEnemyMove];
@@ -327,6 +362,9 @@ namespace GamesTest
             txtEnemyMana.Text = intEnemyMana.ToString();
         }
 
+        /// <summary>
+        /// Sets health to zero and executes EndGame with enemy as the winner
+        /// </summary>
         private void EnemyWins()
         {
             intHealth = 0;
@@ -334,6 +372,11 @@ namespace GamesTest
             EndGame("enemy");
         }
 
+        /// <summary>
+        /// Event handler for the inventory button. Will pull up the frmInventory menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnInventory_Click(object sender, EventArgs e)
         {
             frmInventoryForm.ShowDialog();
